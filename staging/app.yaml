@@ -1,0 +1,14 @@
+command:
+  - python
+  - app.py
+env:
+  - name: DATABRICKS_WAREHOUSE_ID
+    value: "26758af708d46c80"
+  - name: CATALOG_NAME
+    value: "ronguerrero"
+  - name: SCHEMA_NAME
+    value: "capital_markets_ai"
+  - name: VOLUME_NAME
+    value: "document_comparison_uploads"
+  - name: NODE_ENV
+    value: "production"

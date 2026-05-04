@@ -21,11 +21,9 @@ app = FastAPI(title="Document Comparator", version="5.0.0")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
 AVAILABLE_MODELS = [
-    {"id": "databricks-gemini-2-5-flash", "name": "Gemini 2.5 Flash", "provider": "Google"},
     {"id": "databricks-meta-llama-3-3-70b-instruct", "name": "Llama 3.3 70B", "provider": "Meta"},
     {"id": "databricks-claude-sonnet-4-6", "name": "Claude Sonnet 4.6", "provider": "Anthropic"},
     {"id": "databricks-claude-opus-4-6", "name": "Claude Opus 4.6", "provider": "Anthropic"},
-    {"id": "databricks-gemini-2-5-pro", "name": "Gemini 2.5 Pro", "provider": "Google"},
 ]
 
 ENGINES = [
