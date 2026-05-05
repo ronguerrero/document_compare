@@ -22,9 +22,6 @@ SCHEMA = dbutils.widgets.get("schema")
 VOL = f"/Volumes/{CATALOG}/{SCHEMA}/document_comparison"
 OUTPUT_TABLE = f"{CATALOG}.{SCHEMA}.document_comparisons"
 
-spark.sql(f"USE CATALOG {CATALOG}")
-spark.sql(f"USE SCHEMA {SCHEMA}")
-
 dbutils.widgets.text("pptx_file", f"{VOL}/quarterly_review.pptx", "1. PowerPoint File Path")
 
 dbutils.widgets.dropdown("compare_to", "Word Document", [
